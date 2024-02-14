@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO - DO LIST</title>
+    <link rel="stylesheet" type="text/css" href="new_style_to-d0_list.css">
+    <script src="new_script_to-do_list.js"></script>
+</head>
+
+<body class="light-mode">
+    <nav id="todo_nev">
+        <ul>
+            <li><a href="#">All Tasks</a></li>
+            <li><a href="#">Today</a></li>
+            <li><a href="#">Tomorrow</a></li>
+            <li><a href="#">Upcoming</a></li>
+            <li><a href="#">Completed</a></li>
+
+            <img src="moon.png" alt="Light Mode" id="modeToggle" onclick="toggleMode()">
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <h1>Welcome to To - Do List</h1> <br>
+
+    <header>
+        <h1>To - Do List</h1>
+        <form id="new-task-form">
+            <input type="text" name="new-task-input" id="new-task-input" placeholder="Add New Task" />
+            <input type="submit" id="new-task-submit" value="Add task" />
+        </form>
+    </header>
+
+    <main>
+        <section class="task-list">
+            <h1>Tasks</h1>
+
+            <div id="tasks">
+
+                <div class="task">
+                    <div class="content">
+                        <input type="text" class="text" value="A new task" readonly>
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="back_to_top">
+        <div id="BackToTop">
+            <a href="#"> Back to Top </a>
+        </div>
+    </footer>
+
+    </div>
+
+</body>
+
+</html>
